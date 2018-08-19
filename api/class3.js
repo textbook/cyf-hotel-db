@@ -19,9 +19,9 @@ router.delete('/reservations/:id', function(req, res) {
       return;
     }
 
-    console.log(`Successfully removed reservation: ${id}`);
+    console.log("Successfully removed reservation");
     res.status(200).json({
-      message: "Successfully removed reservation " + id
+      message: "Successfully removed reservation"
     });
   });
 });
